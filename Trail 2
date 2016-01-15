@@ -1,0 +1,58 @@
+package Computers;
+import java.util.Scanner;
+
+public class Computer2 {
+
+	public static void main(String[] args) { 
+		ComputerFunctions abc = new ComputerFunctions();
+		
+		Scanner scan = new Scanner(System.in);
+		
+		//Cost
+		System.out.println("What is the total cost of your computer?");
+		abc.setCost(scan.nextDouble());
+		System.out.println(abc.getCost());
+		
+		//Time
+		System.out.println("How many months do you intend to keep the computer? (max 180 months)");
+		abc.setTime(scan.nextDouble());
+		System.out.println(abc.getTime());
+				 
+		//Hours
+		System.out.println("How many hours do you use the computer per day?");
+		abc.setAwake(scan.nextDouble());
+				System.out.println(abc.getAwake());
+				 
+				//Sleep
+				System.out.println("Laptop or Desktop? ");
+				abc.setLaptop(scan.next());
+				System.out.println(abc.getLaptop());
+				
+				//Screen Size
+				System.out.println("Size of Screen (in pixels:500000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000, 4500000, 5000000 ");
+				abc.setSize(scan.nextInt()); 
+				System.out.println(abc.getSize());
+						
+				System.out.println("Type of CPU:IntelLowEnd, IntelMidEnd, IntelHighEnd, IntelTopEnd, AMDLowEnd, AMDMidEnd or AMDHighEnd?");
+				abc.setCpu(scan.next());
+				System.out.println(abc.getCpu());
+				
+				//MB
+				System.out.println("What is the MB of your ram? (DDR1, DDR2, DDR3)");
+				abc.setMb(scan.next());
+				System.out.println(abc.getMb());
+				
+				//Disk
+				System.out.println("What is your hard disk (SSD, HDD2.5 or HDD3.5)?");
+				abc.setDisk(scan.next());
+				System.out.println(abc.getDisk());
+				  
+				//Mouse
+				System.out.println("Does the mouse need battery?");
+				abc.setMouse(scan.next());
+				System.out.println(abc.getMouse());
+				 
+				//Country
+				System.out.println("What state do you live in (in abbreviation) (eg.New York = NY)?");
+				abc.setCountry(scan.next());
+				System.out.println(abc.getCountry());
