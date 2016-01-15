@@ -1,0 +1,150 @@
+package Computers;
+
+import java.util.Scanner;
+
+public class Computer {
+
+	public static void main(String[] args) {
+	
+	
+	    double years;
+	    int screen;
+	    int hours;
+	    int totalPrice = 0;
+	    String mouse;
+		String frame = null;
+	   
+	    String[] multiChoice1;
+	    Scanner input = new Scanner(System.in);
+	    
+	    
+	    //TOTAL COST
+	    //System.out.println("How many years are you expecting to use your computer?:");
+	    //while ((years = input.nextInt()) == 0 || (years = input.nextInt()) > 15){
+	    	//System.out.println("Impossible");
+	    	//System.out.println("How many years are you expecting to use your computer?:");
+	    //}
+	    //if ((years = input.nextInt()) > 1 && (years = input.nextInt()) <= 15){
+	    	//years = input.nextInt();
+	    	//System.out.println(years);
+	    
+	    
+	    int count = 1;
+		while (count <= 1){
+			System.out.println("How many years are you expecting to use your computer?:");
+			years = input.nextDouble();
+			System.out.println(years);
+			
+	    	if(years > 1 || years < 15){
+			count ++;
+		
+	    	}
+	    	
+	    	
+		while (count == 2){
+			System.out.println("What is the size of your screen in inches?:");
+			screen = input.nextInt();
+			System.out.println(screen);
+			
+			if(years > 10 || years < 22){
+				count ++;
+			
+		    	}
+			}
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	//else{
+	    		//System.out.println("Do you have a laptop or a desktop?:");
+	    	//}
+		//}
+		
+		
+		//public double ComputerCost (double y){
+		
+			//years = y;
+			
+			//System.out.println("What is the total cost of your computer?");
+			//double years = input.nextDouble();
+			//System.out.println(years);
+			
+			//return (Double) years;
+		//}
+		
+		//public double 
+		
+		//System.out.println("What is the size of your screen in inches?:");
+		//screen = input.nextInt();
+		//System.out.println(screen);
+		
+		//public Mouse(String mouse){
+			
+			//String mouse;
+		
+		//System.out.println("Does the mouse need a battery?:");
+		//mouse = input.next();
+		//System.out.println(mouse);
+		//if (mouse == "yes"){
+			//totalPrice += 50;
+		//}
+	    
+		//System.out.println(totalPrice);
+
+	    //multiChoice1 = new String[5];
+	    //multiChoice1[0] = "1. Which country currently emits the most greenhouse gases?\n";
+	    //multiChoice1[1] = "blah blah";
+	    //multiChoice1[2] = "blah blah";
+	    //multiChoice1[3] = "blah blah";
+	    //multiChoice1[4] = "blah blah";
+
+	    //String userSelect = multiChoice1[0];
+
+	    //if(userSelect == multiChoice1[0]){
+	        //System.out.println(multiChoice1[0]);
+	        //System.out.println("A. United States");
+	        //System.out.println("B. China");
+	        //System.out.println("C. India");
+	        //System.out.println("D. England");
+	        //System.out.println();
+	        //System.out.print("Your answer: ");
+	        ///String uSelect = input.next();
+
+	       
+	            //case "A":
+	                ///if (uSelect == "United States"){
+	                //System.out.println("United Sates");
+	                //break;
+	            //case "B":
+	                //if (uSelect == "China"){
+	                //System.out.println("China");
+	                //}//break;
+	           // case "C":
+	                //uSelect = "India";
+	                //System.out.println("Incorrect!\n\n");
+	                //break;
+	            //case "D":
+	                //uSelect = "England";
+	                //System.out.println("Incorrect!\n\n");
+	               // break;
+	            //default: 
+	                //uSelect = "Incorrect, choice.\n\n"; 
+	                //break;
+	        }
+	    //}
+	    // more multiple choice questions with similar structure
+	
+	
+	
+	
+	}
+	
+
+}
+	
+	
+	
+	
+
+
